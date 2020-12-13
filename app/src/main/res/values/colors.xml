@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F3435F</color>
+    <color name="colorPrimaryDark">#FFF3435F</color>
+    <color name="colorAccentDark">#F1664B</color>
+    <color name="colorAccent">#3E6BF3</color>
+    <color name="colorBlack">#090202</color>
+    <color name="dark">#EBE7E7</color>
+    <color name="blue">#0C3DD1</color>
+    <color name="loginBack">#272D41</color>
+    <color name="pink">#E42B48</color>
+    <color name="green">#359831</color>
+
+
+
+
+</resources>

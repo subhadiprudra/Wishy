@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetScaduler"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarj"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/get_person"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_person_24"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Target profile"
+                android:gravity="center_vertical"
+                android:id="@+id/person_name"/>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_message_24"
+                android:id="@+id/dra_type1" />
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/dra_type1"
+                android:id="@+id/s2"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your message"
+                android:id="@+id/sc_message"
+                android:layout_toRightOf="@+id/s2"
+                android:layout_toLeftOf="@+id/sugsn"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/sugsn"
+                android:src="@raw/suggestion"
+
+
+
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/numbrlayout"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_contact_phone_24"
+                android:id="@+id/con" />
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/con"
+                android:id="@+id/s3"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter phone number"
+                android:id="@+id/number"
+                android:layout_toRightOf="@+id/s3"
+                android:layout_toLeftOf="@+id/import_contact"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/import_contact"
+                android:src="@raw/contact"
+
+
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ext_time"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_access_time_24"
+                android:id="@+id/msg"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/s1"
+                android:layout_toRightOf="@+id/msg"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Time"
+                android:gravity="center_vertical"
+                android:id="@+id/time_text"
+                android:layout_toRightOf="@+id/s1"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ext_date"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_date_range_24"
+                android:id="@+id/d"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/s5"
+                android:layout_toRightOf="@+id/d"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Date"
+                android:gravity="center_vertical"
+                android:id="@+id/date_text"
+                android:layout_toRightOf="@+id/s5"/>
+
+        </RelativeLayout>
+
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:text="Add Scheduler"
+            android:textColor="@android:color/white"
+            android:id="@+id/add_sch"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/demotext"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

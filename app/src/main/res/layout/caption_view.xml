@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:background="@color/loginBack">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Captions"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:paddingBottom="13dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cationView"
+        android:padding="8dp"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

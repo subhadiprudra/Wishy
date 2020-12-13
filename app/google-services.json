@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "63014639700",
+    "firebase_url": "https://wishy-ac7f0.firebaseio.com",
+    "project_id": "wishy-ac7f0",
+    "storage_bucket": "wishy-ac7f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63014639700:android:00d45bab0a37849241b5c1",
+        "android_client_info": {
+          "package_name": "com.easylife.wishy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63014639700-5behn8mf01f9m6jife3runt3t2o3r16u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzYQi7LujFyJbnWAxVgc1Db5lJMYOIklo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63014639700-5behn8mf01f9m6jife3runt3t2o3r16u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
