@@ -76,7 +76,7 @@ public class Login extends AppCompatActivity {
         new CheckLogInStatus().execute();
 
        // checkBox = findViewById(R.id.check);
-        terms  =findViewById(R.id.tarm);
+        terms=findViewById(R.id.tarm);
 
         loginBtn=findViewById(R.id.login_btn);
         loadingView = findViewById(R.id.loading);

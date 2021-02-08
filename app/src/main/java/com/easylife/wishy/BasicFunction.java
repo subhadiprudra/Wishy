@@ -370,7 +370,6 @@ public class BasicFunction {
 
 
     public boolean isInternetOn(){
-
         try {
             Jsoup.connect("https://google.com").get();
         } catch (IOException e) {
